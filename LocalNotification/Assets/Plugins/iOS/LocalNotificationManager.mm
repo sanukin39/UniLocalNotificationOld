@@ -1,9 +1,3 @@
-//
-//  LocalNotificationManager.m
-//
-//  Created by sanukin39 on 2015/01/16.
-//  Copyright (c) 2015年 sanukin39. All rights reserved.
-//
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
 extern "C"

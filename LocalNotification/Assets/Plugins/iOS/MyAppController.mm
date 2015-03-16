@@ -1,10 +1,3 @@
-//
-//  MyAppController.m
-//
-//  Created by sanukin39 on 2015/01/16.
-//  Copyright (c) 2015年 sanukin39. All rights reserved.
-//
-
 #import "UnityAppController.h"
 
 @interface MyAppController : UnityAppController
