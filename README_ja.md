@@ -33,7 +33,7 @@ LocalNotificationManager.CancelAllNotification();
 
 ## License
 
-[zlib License](https://github.com/sanukin39/UniLocalNotification/blob/master/LICENSE)
+[MIT](https://github.com/sanukin39/UniLocalNotification/blob/master/LICENSE)
 
 ## Author
 [sanukin39](https://github.com/sanukin39)
