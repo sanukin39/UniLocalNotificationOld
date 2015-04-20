@@ -32,7 +32,7 @@ Use [LocalNotification.unitypackage](https://github.com/sanukin39/UniLocalNotifi
 
 ## License
 
-[zlib License](https://github.com/sanukin39/UniLocalNotification/blob/master/LICENSE)
+[MIT](https://github.com/sanukin39/UniLocalNotification/blob/master/LICENSE)
 
 ## Author
 [sanukin39](https://github.com/sanukin39)
