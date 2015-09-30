@@ -75,21 +75,22 @@ namespace LocalNotification{
 
         const int INITIAL_REQUEST_ID_VALUE = 1000;
         const int MAX_LOCAL_NOTIFICATION_NUM = 5;
+        const string PACKAGE_NAME = "jp.ne.donuts.localnotification.NotificationManager";
         static int requestId = INITIAL_REQUEST_ID_VALUE;
 
         public void SetNotification(string body, int delay, string title){
             if (requestId >= INITIAL_REQUEST_ID_VALUE + MAX_LOCAL_NOTIFICATION_NUM)
                 return;
-            AndroidJavaClass c = new AndroidJavaClass ("jp.ne.donuts.localnotifications.LocalNotifications");
-            c.CallStatic ("setLocalNotification", Context(), title, body, requestId, delay);
+            AndroidJavaClass c = new AndroidJavaClass (PACKAGE_NAME);
+            c.CallStatic ("setNotification", Context(), title, body, requestId, delay);
             requestId++;
         }
 
         public void CancelAllNotification(){
-            AndroidJavaClass c = new AndroidJavaClass ("jp.ne.donuts.localnotifications.LocalNotifications");
+            AndroidJavaClass c = new AndroidJavaClass (PACKAGE_NAME);
             AndroidJavaObject context = Context ();
             for (int i = INITIAL_REQUEST_ID_VALUE; i < INITIAL_REQUEST_ID_VALUE + MAX_LOCAL_NOTIFICATION_NUM; i++) {
-                c.CallStatic ("cancelNotifications", context, i);
+                c.CallStatic ("cancelNotification", context, i);
             }
             requestId = INITIAL_REQUEST_ID_VALUE;
         }
